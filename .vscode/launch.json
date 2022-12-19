@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug Server",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.zarco.rockpaperscissors.backend.BackendApplication",
+            "projectName": "rockpaperscissors.backend",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

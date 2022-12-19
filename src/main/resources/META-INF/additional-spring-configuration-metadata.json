@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "mongodb-connection-string",
+    "type": "java.lang.String",
+    "description": "Connection string for MongoDB"
+  },
+  {
+    "name": "mongodb-database-name",
+    "type": "java.lang.String",
+    "description": "The database name in MongoDB"
+  }
+]}

@@ -1,0 +1,30 @@
+@url=http://localhost:8080
+
+### Create a Player
+POST {{url}}/players
+Content-Type: text/plain
+
+mike
+
+
+### Get a Player
+GET {{url}}/players/mike
+
+
+### CREATE A GAME RESULT
+POST {{url}}/game-results
+Content-Type: application/json
+
+{
+    "playerName": "mike",
+    "playerSymbol": "Paper",
+    "adversarySymbol": "Scissors",
+    "outcome": "Won"
+}
+
+### GET STATS
+GET {{url}}/game-results/stats?playerName=mike
+
+
+### Reset player
+POST {{url}}/players/mike/reset
