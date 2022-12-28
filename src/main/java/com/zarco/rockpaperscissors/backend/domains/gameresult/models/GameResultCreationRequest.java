@@ -12,7 +12,7 @@ public class GameResultCreationRequest {
     private Symbol playerSymbol;
 
     @NotNull
-    private Symbol adversarySymbol;
+    private Symbol computerSymbol;
 
     @NotNull
     private Result outcome;

@@ -34,35 +34,35 @@ public class GameResultService {
         for (GameResult result : gameResults) {
             // Sorry for this piece of code ^^
             switch (result.getOutcome()) {
-                case Won:
+                case WON:
                     stats.gamesWon++;
                     switch (result.getPlayerSymbol()) {
-                        case Rock:
+                        case ROCK:
                             stats.gamesWonWithRock++;
                             break;
 
-                        case Paper:
+                        case PAPER:
                             stats.gamesWonWithPaper++;
                             break;
 
-                        case Scissors:
+                        case SCISSORS:
                             stats.gamesWonWithScissors++;
                             break;
 
-                        case Unknown:
+                        case NONE:
                             break;
                     }
                     break;
 
-                case Lost:
+                case LOST:
                     stats.gamesLost++;
                     break;
 
-                case Tied:
+                case TIED:
                     stats.gamesTied++;
                     break;
                 
-                case Unknown:
+                case NONE:
                     break;
             }
         }

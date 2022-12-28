@@ -28,7 +28,7 @@ public class MongoGameResultRepository implements GameResultRepository {
 
     public List<GameResult> findAllByPlayerName(String playerName) {
         List<GameResult> gameResults = new ArrayList<>();
-        collection.find(eq("playerName", playerName)).into(gameResults);
+        collection.find(eq("playerName", playerName.toLowerCase())).into(gameResults);
         return gameResults;
     }
 

@@ -4,7 +4,7 @@
 POST {{url}}/players
 Content-Type: text/plain
 
-mike
+Jan
 
 
 ### Get a Player
