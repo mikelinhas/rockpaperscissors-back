@@ -2,7 +2,7 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Debug Server",
+            "name": "Start Server",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "mainClass": "com.zarco.rockpaperscissors.backend.BackendApplication",
